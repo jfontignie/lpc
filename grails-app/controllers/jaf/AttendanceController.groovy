@@ -2,5 +2,5 @@ package jaf
 
 class AttendanceController {
 
-    def scaffold = true
+    def scaffold = Attendance
 }

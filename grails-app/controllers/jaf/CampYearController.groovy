@@ -2,5 +2,5 @@ package jaf
 
 class CampYearController {
 
-    def scaffold = true
+    def scaffold = CampYear
 }
