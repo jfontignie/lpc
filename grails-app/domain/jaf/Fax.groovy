@@ -1,12 +1,13 @@
 package jaf
 
-class Phone extends Contact {
-    String phone
-
+class Fax extends Contact {
+    String number
     static constraints = {
+
     }
 
     def String toString() {
-        return phone
+        return number
     }
+
 }

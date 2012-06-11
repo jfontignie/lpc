@@ -13,8 +13,14 @@ class LanguageLevel {
     }
 }
 
-public enum Language {
+enum Language {
 
     //TODO, fill the language
     ENGLISH, SPANISH, FRENCH, PORTUGUESE
+}
+
+
+enum Level {
+
+    BASIC, GOOD, FLUENT
 }

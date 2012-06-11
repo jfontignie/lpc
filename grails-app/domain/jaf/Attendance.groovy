@@ -13,3 +13,5 @@ class Attendance {
         return person + " in " + camp
     }
 }
+
+enum CampType {}

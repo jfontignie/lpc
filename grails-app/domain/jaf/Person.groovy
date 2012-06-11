@@ -1,6 +1,6 @@
 package jaf
 
-abstract class Person {
+class Person {
 
     String firstName
     String lastName
@@ -24,7 +24,11 @@ abstract class Person {
     Date dateCreated
     Date lastUpdated
 
+    Person father
+    Person mother
+
     static hasMany = [contacts: Contact, attendances: Attendance]
+
 
     static constraints = {
         firstName(blank: false)
@@ -45,4 +49,10 @@ enum Nationality {
 
 enum Gender {
     MALE, FEMALE
+}
+
+enum Status {
+
+    CD, CO, CA, DIT, I, D, PARENT
+
 }

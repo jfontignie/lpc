@@ -16,3 +16,5 @@ abstract class Contact {
 enum ContactMode {
     HOME, WORK
 }
+
+

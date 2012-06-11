@@ -1,7 +1,6 @@
 package jaf
 
 class Email extends Contact {
-
     String email
 
     static constraints = {
@@ -11,4 +10,5 @@ class Email extends Contact {
     def String toString() {
         return email
     }
+
 }
