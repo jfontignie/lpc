@@ -2,5 +2,5 @@ package jaf
 
 class ClientController {
 
-    def scaffold = Client
+    def scaffold = Camper
 }

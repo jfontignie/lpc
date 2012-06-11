@@ -1,6 +1,6 @@
 package jaf
 
-class Client extends Person{
+class Camper extends Person{
 
     String parentName
 
