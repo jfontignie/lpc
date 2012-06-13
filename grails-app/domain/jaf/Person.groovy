@@ -10,16 +10,13 @@ class Person {
     boolean vip
     String sgroup
 
-    Set<LanguageLevel> languages
-
-    String preference
+    String preferences
     Gender gender
 
     boolean rejected
-    Status status //TODO ask jacques for the enumeration
+    Status status
 
     boolean newClient //TODO ASK jacques for the purpose
-
 
     Date dateCreated
     Date lastUpdated
@@ -27,14 +24,18 @@ class Person {
     Person father
     Person mother
 
-    static hasMany = [contacts: Contact, attendances: Attendance]
+    static hasMany = [contacts: Contact, attendances: Attendance,languages: LanguageLevel]
 
 
     static constraints = {
         firstName(blank: false)
         lastName(blank: false)
+        nationality()
         birthDay()
+        father(nullable: true)
+        mother(nullable: true)
     }
+
 
     def String toString() {
         return firstName + " " + lastName

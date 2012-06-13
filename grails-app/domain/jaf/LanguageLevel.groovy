@@ -2,15 +2,16 @@ package jaf
 
 class LanguageLevel {
 
-    Language language
+    Locale language
     Level level
 
     static constraints = {
     }
 
     def String toString() {
-        return language + "(" + level + ")"
+        return language.getDisplayName() + "(" + level + ")"
     }
+
 }
 
 enum Language {
