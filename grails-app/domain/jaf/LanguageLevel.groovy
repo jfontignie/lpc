@@ -26,6 +26,7 @@ class LanguageLevel {
     Level level
 
     static constraints = {
+        language(nullable: false)
     }
 
     def String toString() {
